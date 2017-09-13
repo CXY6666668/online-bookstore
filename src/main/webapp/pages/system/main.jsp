@@ -24,10 +24,16 @@
 			<tr style="height: 25px;" align="right">
 				<td style="" colspan="2">
 				<div style="background: url(image/common/top_bg.jpg) no-repeat right center; float: right;">
-				<div style="float: left; line-height: 25px; margin-left: 70px;"><span style="color: #386780">当前用户:</span> <span style="color: #FFFFFF">${username }</span>&nbsp;&nbsp;&nbsp;&nbsp; <span
-					style="color: #386780">其他:</span> <span style="color: #FFFFFF">${roleName }</span></div>
+				<div style="float: left; line-height: 25px; margin-left:10px;">
+				<span style="color: #386780">当前用户:</span> 
+				<span style="color: #FFFFFF">${username }
+				</span>&nbsp;&nbsp;&nbsp;&nbsp; <span
+					style="color: #386780">角色:</span> <span style="color: #FFFFFF">${roleName }</span>
+					</div>
 				<div style="float: left; margin-left: 18px;">
-				<div style="right: 0px; bottom: 0px;"><a href="javascript:void(0);" class="easyui-menubutton" menu="#layout_north_zxMenu" iconCls="icon-exit" style="color: #FFFFFF">注销</a></div>
+				<div style="right: 0px; bottom: 0px;">
+				<a href="javascript:void(0);" class="easyui-menubutton" menu="#layout_north_zxMenu" iconCls="icon-exit" style="color: #FFFFFF">注销</a>
+				</div>
 				<div id="layout_north_zxMenu" style="width: 100px; display: none;">
 					<div class="menu-sep"></div>
 					<div onclick="exit('loginController.do?logout','确定退出该系统吗 ?');">退出系统</div>
@@ -76,7 +82,7 @@
 	
 	<!-- 底部 -->
 	<div region="south" border="false" style="height: 25px; overflow: hidden;">
-	<div align="center" style="color: #CC99FF; padding-top: 2px">&copy; 版权所有 <span class="tip"><a href="http://www.bjpowernode.com" title=" 北京动力节点教育科技有限公司"> 北京动力节点教育科技有限公司</a>  </span></div>
+	<div align="center" style="color: #CC99FF; padding-top: 2px">&copy; 版权所有 <span class="tip"><a href="" title="个人学习使用">仅供个人学习使用（借鉴网上源码）</a>  </span></div>
 </div>
 <div id="mm" class="easyui-menu" style="width: 150px;">
 <div id="mm-tabupdate">刷新</div>

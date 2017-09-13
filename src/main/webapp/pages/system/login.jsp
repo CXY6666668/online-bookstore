@@ -6,7 +6,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-	<title>动力节点学生毕业设计宿舍管理系统</title>
+	<title>2501宿舍管理系统</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width">
 	 <link rel="stylesheet" href="css/login/normalize.css">
@@ -38,8 +38,9 @@
 		</form>
 		<br/>
 		<div>
-			<a href="http://www.bjpowernode.com" style="color: white;" target="_blank">动力节点_学习之旅</a>
+			<a href="#" style="color: white;" target="_blank">Zane_学习之旅</a>
 		</div>
+		<br/>
 	</section>
 	<div style="text-align:center;clear:both">
 </div>
