@@ -15,7 +15,7 @@
 				<th data-options="field:'name',width:80">学生姓名</th>
 				<th data-options="field:'sex',width:80" formatter="changeValue">性别</th>
 				<th data-options="field:'birthday',width:80" formatter="changeDate">出生日期</th>
-				<th data-options="field:'qq',width:80">qq</th>
+				<th data-options="field:'qq',width:80">QQ</th>
 				<th data-options="field:'mobile',width:80">电话</th>
 				<th data-options="field:'classname',width:80" formatter="changeClassname">班级</th>
 				<th data-options="field:'dormname',width:80" formatter="changeDormname">宿舍</th>
