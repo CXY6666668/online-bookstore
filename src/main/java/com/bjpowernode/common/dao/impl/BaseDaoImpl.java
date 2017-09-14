@@ -1,6 +1,5 @@
 package com.bjpowernode.common.dao.impl;
 
-
 import java.util.List;
 
 import org.apache.log4j.Logger;
@@ -17,31 +16,28 @@ import com.bjpowernode.common.dao.BaseDao;
 
 @Repository("baseDao")
 public class BaseDaoImpl implements BaseDao {
-	
+
 	private Logger logger = Logger.getLogger(this.getClass());
-	
+
 	@Autowired
 	private SessionFactory sessionFactory;
-	
+
 	public Session getSession() {
 		// 事务必须是开启的(Required)，否则获取不到
 		return sessionFactory.getCurrentSession();
 	}
-	
-	
 
 	@Override
-	public <T> void saveOrUpdate(T entity){
-		try{
+	public <T> void saveOrUpdate(T entity) {
+		try {
 			this.getSession().saveOrUpdate(entity);
 			this.getSession().flush();
-		}catch(RuntimeException e){
-			logger.error("保存或更新实体异常",e);
+		} catch (RuntimeException e) {
+			logger.error("保存或更新实体异常", e);
 			throw e;
 		}
-		
-	}
 
+	}
 
 	@SuppressWarnings("unchecked")
 	@Override
@@ -67,36 +63,36 @@ public class BaseDaoImpl implements BaseDao {
 
 	@Override
 	public <T> void save(T entity) {
-		try{
+		try {
 			this.getSession().save(entity);
 			this.getSession().flush();
-		}catch(RuntimeException e){
-			logger.error("保存实体异常",e);
+		} catch (RuntimeException e) {
+			logger.error("保存实体异常", e);
 			throw e;
 		}
 	}
 
 	@Override
-	public <T> void update(T entity){
-		try{
+	public <T> void update(T entity) {
+		try {
+			this.getSession().clear();
 			this.getSession().update(entity);
 			this.getSession().flush();
-		}catch(RuntimeException e){
-			logger.error("更新实体异常",e);
+		} catch (RuntimeException e) {
+			logger.error("更新实体异常", e);
 			throw e;
 		}
 	}
 
 	@Override
 	public <T> void delete(T entity) {
-		try{
+		try {
 			this.getSession().delete(entity);
 			this.getSession().flush();
-		}catch(RuntimeException e){
-			logger.error("删除实体异常",e);
+		} catch (RuntimeException e) {
+			logger.error("删除实体异常", e);
 			throw e;
 		}
 	}
-
 
 }
