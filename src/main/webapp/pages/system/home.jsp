@@ -10,7 +10,7 @@
 <br>
 关注微信公众平台获取IT行业面试题
  -->
- <h2>This is 2501 dormitory from University Of The South！Come on!!!</h2>
+ <h3>This is 2501 dormitory for University Of The South！Come on!!!</h3>
 </div>
 <div style="text-align: center;">
 	<img alt="" src="image/common/my2051.JPG">

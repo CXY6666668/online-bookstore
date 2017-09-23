@@ -82,7 +82,7 @@
 	
 	<!-- 底部 -->
 	<div region="south" border="false" style="height: 25px; overflow: hidden;">
-	<div align="center" style="color: #CC99FF; padding-top: 2px">&copy; 版权所有 <span class="tip"><a href="" title="个人学习使用">仅供个人学习使用（借鉴网上源码）</a>  </span></div>
+	<div align="center" style="color: #CC99FF; padding-top: 2px">&copy; 版权所有 <span class="tip"><a href="" title="个人学习使用">仅供个人学习使用（借鉴网上资源，感谢原创）</a>  </span></div>
 </div>
 <div id="mm" class="easyui-menu" style="width: 150px;">
 <div id="mm-tabupdate">刷新</div>
