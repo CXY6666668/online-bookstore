@@ -13,5 +13,5 @@
  <h4>This is 2501 dormitory for University Of The South！Come on!!!</h4>
 </div>
 <div style="text-align: center;">
-	<img alt="" src="image/common/my2051.JPG">
+	<img alt="" src="image/common/my2501.JPG">
 </div>
