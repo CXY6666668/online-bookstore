@@ -29,8 +29,8 @@
 		<div>
 			访客姓名: <input class="easyui-textbox" id="paramVisitorName">
 			受访者姓名: <input class="easyui-textbox" id="paramStudent">
-			进入时间: <input class="easyui-datebox" id="paramStarttime" style="width:80px">
-			结束时间: <input class="easyui-datebox" id="paramEndtime" style="width:80px">
+			进入时间: <input class="easyui-datebox" id="paramStarttime" style="width:120px">
+			结束时间: <input class="easyui-datebox" id="paramEndtime" style="width:120px">
 			<a href="#" class="easyui-linkbutton" onclick="doSearch()" iconCls="icon-search">查找</a>
 			<a href="#" class="easyui-linkbutton" onclick="doReset()" iconCls="icon-redo">重置</a>
 		</div>
