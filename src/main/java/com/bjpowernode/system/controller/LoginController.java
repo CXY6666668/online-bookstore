@@ -93,7 +93,7 @@ public class LoginController {
 		HttpSession session = ContextHolderUtils.getSession();
 		AjaxJson j = new AjaxJson();
 
-		if (captcha.equalsIgnoreCase(String.valueOf(session.getAttribute(SystemConstant.KEY_CAPTCHA)))) {
+		if (!captcha.equalsIgnoreCase(String.valueOf(session.getAttribute(SystemConstant.KEY_CAPTCHA)))) {
 			j.setSuccess(false);
 			j.setMsg("验证码错误!");
 		} else {
