@@ -8,6 +8,7 @@ $(document).ready(function() {
 function onfocus(){
 	$("#username").focus();
 }
+//刷新验证码
 function refreshCaptcha() {
 	var date = new Date();
 	var captcha = document.getElementById("img_captcha");
