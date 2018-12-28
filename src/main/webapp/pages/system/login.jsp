@@ -6,7 +6,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-	<title>2501宿舍管理系统</title>
+	<title>网上购书系统</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width">
 	 <link rel="stylesheet" href="css/login/normalize.css">
@@ -18,7 +18,7 @@
 <br/>
 <br/>
 	<section class="login-form-wrap">
-		<h1>宿舍管理系统</h1>
+		<h1>网上购书系统</h1>
 		<form class="login-form" action="loginController.do?doLogin" method="post" check="loginController.do?doCheck" >
 			<label>
 				<input type="text" id="username" name="username" placeholder="用户名">
@@ -38,7 +38,7 @@
 		</form>
 		<br/>
 		<div>
-			<a href="#" style="color: white;" target="_blank">Zane_学习之旅</a>
+			<a href="#" style="color: white;" target="_blank">毕业设计_学习之旅</a>
 		</div>
 		<br/>
 	</section>

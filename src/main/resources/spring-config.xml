@@ -14,11 +14,11 @@
 	   http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd   
        ">
 
-	<context:component-scan base-package="com.bjpowernode.common.service" />
-	<context:component-scan base-package="com.bjpowernode.common.dao" />
-	<context:component-scan base-package="com.bjpowernode.system.service" />
-	<context:component-scan base-package="com.bjpowernode.system.dao" />
-	<context:component-scan base-package="com.bjpowernode.buss.service" />
+	<context:component-scan base-package="com.cxa.common.service" />
+	<context:component-scan base-package="com.cxa.common.dao" />
+	<context:component-scan base-package="com.cxa.system.service" />
+	<context:component-scan base-package="com.cxa.system.dao" />
+	<context:component-scan base-package="com.cxa.buss.service" />
 
 
 	<!-- proptery 配置 -->
@@ -114,9 +114,9 @@
 		<property name="dataSource" ref="dataSource" />
 		<property name="packagesToScan">
 			<list>
-				<value>com.bjpowernode.common.entity.*</value>
-				<value>com.bjpowernode.system.entity.*</value>
-				<value>com.bjpowernode.buss.entity.*</value>
+				<value>com.cxa.common.entity.*</value>
+				<value>com.cxa.system.entity.*</value>
+				<value>com.cxa.buss.entity.*</value>
 			</list>
 		</property>
 		<property name="hibernateProperties">
@@ -175,7 +175,7 @@
 	</tx:advice>
 	<!-- 定义事务入口 -->
 	<aop:config>
-		<aop:pointcut id="txPointcut" expression="execution(* com.bjpowernode..service..*.*(..))" />
+		<aop:pointcut id="txPointcut" expression="execution(* com.cxa..service..*.*(..))" />
 		<aop:advisor advice-ref="txAdvice" pointcut-ref="txPointcut" />
 	</aop:config>
 	

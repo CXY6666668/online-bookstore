@@ -14,9 +14,9 @@
         http://www.springframework.org/schema/tx   
         http://www.springframework.org/schema/tx/spring-tx-4.0.xsd">
 
-	<context:component-scan base-package="com.bjpowernode.common.controller" />
-	<context:component-scan base-package="com.bjpowernode.system.controller" />
-	<context:component-scan base-package="com.bjpowernode.buss.controller" />
+	<context:component-scan base-package="com.cxa.common.controller" />
+	<context:component-scan base-package="com.cxa.system.controller" />
+	<context:component-scan base-package="com.cxa.buss.controller" />
    
    	<mvc:annotation-driven />
    <!-- 处理请求时返回json字符串的中文乱码问题 
@@ -71,7 +71,7 @@
  <mvc:interceptors>
   <mvc:interceptor>
    <mvc:mapping path="/**" />
-   <bean class="com.bjpowernode.system.interceptor.AuthInterceptor">
+   <bean class="com.cxa.system.interceptor.AuthInterceptor">
    <property name="excludeUrls">
      <list>
      <value>loginController.do?login</value>
