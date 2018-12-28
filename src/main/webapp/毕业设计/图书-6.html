@@ -1,0 +1,386 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>无标题文档</title>
+<style>
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	margin: 0;
+	font-family: "微软雅黑";
+	height:2000px;
+}
+.example {
+	width: 750px;
+	height: 400px;
+	font-size: 40px;
+	float:left;
+}
+.carousel-item{
+	line-height: 336px;
+	color: #fff;
+	font-family:  Arial Black
+}
+.header{
+	width:100%;
+	height:40px;
+	background:#333;
+	position:fixed;
+	top:0;
+	z-index:2;
+}
+.header ul,.header li{
+	list-style-type:none;
+}
+.header ul{
+	float:right;
+}
+.header li{
+	float:left;
+	font-size:14px;
+	line-height:40px;
+	width:65px;
+	text-align:center;
+	list-style-type:none;
+}
+.red{
+	background-color:#FF4848;
+}
+.yellow{
+	background-color:#FF8346;
+}
+.header a{
+	height:40px;
+	display:block;
+	color:#CCC;
+	text-decoration:none;
+}
+.header a:hover,.header a:active{
+	background-color:#000;
+	color:#FFF;
+	text-decoration:none;
+}
+
+.content{
+	width:1000px;
+	height:130px;
+	margin:0 auto;
+}
+.logo{
+	width:200px;
+	height:100px;
+	float:left;
+	line-height:250px;
+}
+.nav{
+	line-height:50px;
+	width:460px;
+	margin-left:10px;
+	margin-top:60px;
+	float:left;
+}
+.nav a{
+	font-size:19px;
+	color:#333;
+	text-decoration:none;
+	padding-left:10px;
+}
+.nav a:hover{
+	color:#F33;
+	text-decoration:none;
+}
+#box{
+	width: 270px;
+	margin-top:70px;
+	font-family: 'Microsoft YaHei';
+	font-size: 14px;
+	float:right;
+	border:1px solid #999;
+}
+input{
+	width: 150px;
+	border: 1px solid #999;
+	height: 30px;
+	float: left;
+	background-image: url(images/search.jpg);
+	background-size: 25px;
+	background-position:5px center;
+	padding:0 0 0 40px;
+}
+#search{
+	width: 78px;
+	height: 32px;
+	float: right;
+	background:#999;
+	color: white;
+	text-align: center;
+	line-height: 32px;
+	cursor: pointer;
+}
+.border{
+	border:1px solid #F00;
+	width:1100%;
+	margin-bottom:50px;
+	margin-top:10px;
+}
+.artcle{
+	width:1000px;
+	height:500px;
+	margin:0 auto;
+}
+.artcle-left{
+	width:300px;
+	height:400px;
+	float:left;
+	border:1px solid #CCC;
+}
+.artcle-left img{
+	margin:70px 50px;
+}
+.artcle-right{
+	width:650px;
+	height:400px;
+	float:right;
+}
+.or{
+	color:#F00;
+	font-size:13px;
+}
+.orr{
+	font-size:13px;
+	color:#666;
+	line-height:30px;
+}
+.orrr{
+	font-size:13px;
+	color:#666;
+	margin-top:50px;
+	
+}
+.orrrr{
+	font-size:18px;
+	color:#F00;
+}
+.btt{
+	margin-top:50px;
+}
+.aside{
+	width:1000px;
+	height:2000px;
+	margin:0 auto;
+}
+.aside-left{
+	width:200px;
+	height:600px;
+	float:left;
+	border:1px solid #CCC;
+	line-height:50px;
+}
+.aside-left a{
+	color:#000;
+	text-decoration:none;
+}
+.aside-left a:hover{
+	color:#F00;
+}
+.left-t{
+	height:50px;
+	background-color:#CCC;
+}
+.right-t{
+	border:0.5px solid #CCC;
+}
+.aside-right{
+	width:760px;
+	height:1900px;
+	float:right;
+	border:1px solid #CCC;
+	line-height:40px;
+	padding:10px;
+}
+
+
+.tushu{
+	color:#F00;
+	font-size:18px;
+	margin-top:20px;
+}
+.xuhao-red{
+	color:#F00;
+	font-size:19px;
+	margin-left:15px;
+	margin-right:15px;
+}
+.xuhao{
+	font-size:18px;
+	margin-left:15px;
+	margin-right:15px;
+}
+.fooder{
+	width:100%;
+	height:50px;
+	line-height:50px;
+	background-color:#F7F7F7;
+}
+.fooder li{
+	float:left;
+	list-style:none;
+	margin-left:160px;
+}
+.fooder li a{
+	font-size:18px;
+	color:#333;
+	text-decoration:none;
+}
+.fooder li a:hover{
+	color:#F00;
+}
+.logo2{
+	text-align:center;
+	background-color:#F7F7F7;
+}
+.ad{
+	width:1000px;
+	margin:0 auto;
+}
+</style>
+</head>
+
+<body>
+<div class="header">
+    <li><a href="#">首页</a></li>
+    <li><a href="#">登录</a></li>
+    <li><a href="#">注册</a></li>
+    <ul>
+        <li><a href="#">购物车</a></i></li>
+        <li><a href="#">收藏夹</a></li>
+        <li class="red"><a href="#">分类</a></li>
+        <li class="yellow"><a href="#">公告</a></li>
+    </ul>
+</div>
+<div class="content">
+<div class="logo">
+  <img src="images/LOGO.png" width="230">
+  </div>
+  <div class="nav">
+      <a href="#">教材书籍</a>
+      <a href="#">少儿读物</a>
+      <a href="#">社科书籍</a>
+      <a href="#">网络文学</a>
+      <a href="#">创意文具</a>
+    </div>
+    <div id="box">
+        <input type="text" name="search" placeholder="请输入关键字">
+        <div id="search">搜索</div>
+    </div>
+</div>
+
+<div class="border"></div>
+
+<div class="artcle">
+<div class="artcle-left">
+<img src="images/img5.jpg" width="200" height="235">
+</div>
+
+<div class="artcle-right">
+<h3>大法医:人体实验室</h3><br>
+<span class="or"><p>豆瓣8.8分，现代法医学奠基人比尔·巴斯的法医鉴证实录，国际刑事鉴识专家李昌钰博士推荐。</p></span>
+<br>
+
+<span class="orr">
+<p>作者：[美]比尔·巴斯/乔恩·杰弗逊 著,蔡承志 译</p>
+<p>出版社：天津人民出版社 出版时间：2015-12-01</p>
+<p>开本：32开页数：318页</p>
+<p>排名：文学销量榜第1位</p>
+</span>
+
+<p class="orrr">中 图 价:<span class="orrrr">¥11.9</span>(3折)定价:<strike>¥39.8</strike></p>
+<div>
+<button class="btt" style=" border:1px solid #F00; background-color:#F00; color:#FFF; width:120px; height:50px; border-radius:8px; font-size:18px;">
+加入购物车</button>
+<button style=" border:1px solid #F00; background-color:#FFF; color:#F00; width:80px; height:50px; border-radius:8px; font-size:18px; margin-left:20px;">
+收藏</button>
+</div>
+
+</div>
+</div>
+
+<div class="ad">
+<img src="images/img-1.jpg" width="330">
+<img src="images/img-2.jpg" width="330">
+<img src="images/img-3.jpg" width="330">
+</div>
+
+<div class="aside">
+<div class="aside-left">
+<div class="left-t"><span>书友推荐</span></div>
+<p><span class=" xuhao-red">01</span><a href="#">现代西方心灵哲学</a></p>
+<p><span class=" xuhao-red">02</span><a href="#">六号染色体</a></p>
+<p><span class=" xuhao-red">03</span><a href="#">天狗面具</a></p>
+<p><span class=" xuhao">04</span><a href="#">隐形圈</a></p>
+<p><span class=" xuhao">05</span><a href="#">第七个十字架</a></p>
+<p><span class=" xuhao">06</span><a href="#">中央帝国的哲学密码</a></p>
+<p><span class=" xuhao">07</span><a href="#">中医往事</a></p>
+<p><span class=" xuhao">08</span><a href="#">庄子的现代命运</a></p>
+<p><span class=" xuhao">09</span><a href="#">中国文化的美丽精神</a></p>
+<p><span class=" xuhao">10</span><a href="#">大法医:人体实验室</a>></p>
+</div>
+<div class="aside-right">
+<span style=" margin-left:30px;">商品详情</span>
+<div class="right-t"></div>
+<h3>大法医:人体实验室 本书特色</h3>
+巴斯博士是一位典型的"脑洞大开"型理工男，在他人类学家的严谨外表下，隐藏着一颗坚实的黑色幽默的心。他把带着腐肉的颅骨带回家用做饭的汤锅炖煮，结果被妻子发现（不知道会不会被罚跪键盘）；为了给尸体找个阴凉的好住所，他把它放进了大楼清洁工的拖把柜（求清洁工的心理阴影面积他把无法破案的受害人颅骨带在身边当教具40年，并亲切称呼它为"教学伙伴""法医界的英雄"；他在早餐会时的幻灯片演示让派翠西亚·康薇尔（《首席女法医》的作者）一辈子不想吃炒蛋…… 
+　　当然，在本书中你不光会看到一个神经大条、脑洞乱开的比尔·巴斯博士，你还将看到一位科学家的严谨态度，一群追求正义的人付出的艰辛努力，当然也有对体制的深深无力感，毕竟人类学家能揭示犯罪真相，却不能推动官僚起步运转。 
+　　总之，你将在本书中看到一个有血有肉的法医人类学家，他毕生的追求就是：为死者言，为生者权！
+
+<h3>大法医:人体实验室 内容简介</h3>
+《大法医：人体实验室》讲述的是现代法医学奠基人比尔？巴斯的法医鉴证实录。书中讲述了多个案例，真实再现了法医的工作场景。将法医如何通过医学、生物学、人类学及物理、化学等方面的知识对与人身有关的活体、尸体及生物物证等的检验鉴定工作，从而取得死亡原因、伤害程度、凶器种类、血型分析、事实确认等结论性意见来断定案情描述得淋漓尽致。 
+　　作者比尔·巴斯是美国知名的法医学专家，现代法医学的奠基人。他的研究经历和故事被作为原型，在《首席女法医——人体农场》一书中出现，并登上《纽约时报》的畅销书排行榜。很多电视纪录片和文章都报道了他的事迹。
+
+
+<h3>大法医:人体实验室 目录</h3>
+英文版序 人体农场场主/派翠西亚·康薇尔<br> 
+diyi章 林白小鹰枯骨之谜<br> 
+第二章 抢救印第安大作战 <br>
+第三章 初见教学伙伴 <br>
+第四章 扼杀稚童恶叔叔<br> 
+第五章 无头尸体笑开怀 <br>
+第六章 勇闯犯罪现场 <br>
+第七章 人体农场，开张<br> 
+第八章 虫虫吐真言 <br>
+第九章 抗议纷争 <br>
+第十章 黑道风云：胖子山姆怪怪唐 <br>
+第十一章 学术研究与法医实务 <br>
+第十二章 辣手摧花野兽男 <br>
+第十三章 史帝夫的锯子神话<br> 
+第十四章 《人体农场》出版 <br>
+第十五章 史上zui大危机 <br>
+第十六章 烤肉——烤谁的肉 <br>
+第十七章 跨国焦尸疑云 <br>
+第十八章 太过血腥的谋杀<br> 
+第十九章 灰飞湮不灭的黑心葬仪社 <br>
+第二十章 死神暂不收我，所以…… <br>
+致谢词 <br>
+附录 人类骨骼图示<br>
+<h3>大法医:人体实验室 作者简介</h3>
+比尔·巴斯，法医科学界的传奇，国际刑事鉴识专家李昌钰博士深交30年好友，曾经参与数百案件，从小镇镇长办公室到美国联邦调查局。他的研究，革新了法医科学领域。他首创了专门研究尸体腐烂的实验室：田纳西州大学人类学研究所。是畅销推理小说《首席女法医》作者的写作顾问。 
+
+　　乔恩·杰弗逊，资深记者、科学作家和纪录片制作人。</p>
+</div>
+</div>
+
+<div class="fooder" >
+<li><a href="#">新手上路</a></li>
+<li><a href="#">购买问题</a></li>
+<li><a href="#">售后服务</a></li>
+<li>借鉴中国图书网</li> 
+<li>借鉴新东方图书网</li> 
+</div>
+<div class="logo2"><img src="images/footer.fw.png"></div>
+
+
+</body>
+</html>

@@ -1,0 +1,393 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>无标题文档</title>
+<style>
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	margin: 0;
+	font-family: "微软雅黑";
+	height:2000px;
+}
+.example {
+	width: 750px;
+	height: 400px;
+	font-size: 40px;
+	float:left;
+}
+.carousel-item{
+	line-height: 336px;
+	color: #fff;
+	font-family:  Arial Black
+}
+.header{
+	width:100%;
+	height:40px;
+	background:#333;
+	position:fixed;
+	top:0;
+	z-index:2;
+}
+.header ul,.header li{
+	list-style-type:none;
+}
+.header ul{
+	float:right;
+}
+.header li{
+	float:left;
+	font-size:14px;
+	line-height:40px;
+	width:65px;
+	text-align:center;
+	list-style-type:none;
+}
+.red{
+	background-color:#FF4848;
+}
+.yellow{
+	background-color:#FF8346;
+}
+.header a{
+	height:40px;
+	display:block;
+	color:#CCC;
+	text-decoration:none;
+}
+.header a:hover,.header a:active{
+	background-color:#000;
+	color:#FFF;
+	text-decoration:none;
+}
+
+.content{
+	width:1000px;
+	height:130px;
+	margin:0 auto;
+}
+.logo{
+	width:200px;
+	height:100px;
+	float:left;
+	line-height:250px;
+}
+.nav{
+	line-height:50px;
+	width:460px;
+	margin-left:10px;
+	margin-top:60px;
+	float:left;
+}
+.nav a{
+	font-size:19px;
+	color:#333;
+	text-decoration:none;
+	padding-left:10px;
+}
+.nav a:hover{
+	color:#F33;
+	text-decoration:none;
+}
+#box{
+	width: 270px;
+	margin-top:70px;
+	font-family: 'Microsoft YaHei';
+	font-size: 14px;
+	float:right;
+	border:1px solid #999;
+}
+input{
+	width: 150px;
+	border: 1px solid #999;
+	height: 30px;
+	float: left;
+	background-image: url(images/search.jpg);
+	background-size: 25px;
+	background-position:5px center;
+	padding:0 0 0 40px;
+}
+#search{
+	width: 78px;
+	height: 32px;
+	float: right;
+	background:#999;
+	color: white;
+	text-align: center;
+	line-height: 32px;
+	cursor: pointer;
+}
+.border{
+	border:1px solid #F00;
+	width:1100%;
+	margin-bottom:50px;
+	margin-top:10px;
+}
+.artcle{
+	width:1000px;
+	height:500px;
+	margin:0 auto;
+}
+.artcle-left{
+	width:300px;
+	height:400px;
+	float:left;
+	border:1px solid #CCC;
+}
+.artcle-left img{
+	margin:79px 50px;
+}
+.artcle-right{
+	width:650px;
+	height:400px;
+	float:right;
+}
+.or{
+	color:#F00;
+	font-size:13px;
+}
+.orr{
+	font-size:13px;
+	color:#666;
+	line-height:30px;
+}
+.orrr{
+	font-size:13px;
+	color:#666;
+	margin-top:50px;
+	
+}
+.orrrr{
+	font-size:18px;
+	color:#F00;
+}
+.btt{
+	margin-top:50px;
+}
+.aside{
+	width:1000px;
+	height:2100px;
+	margin:0 auto;
+}
+.aside-left{
+	width:200px;
+	height:600px;
+	float:left;
+	border:1px solid #CCC;
+	line-height:50px;
+}
+.aside-left a{
+	color:#000;
+	text-decoration:none;
+}
+.aside-left a:hover{
+	color:#F00;
+}
+.left-t{
+	height:50px;
+	background-color:#CCC;
+}
+.right-t{
+	border:0.5px solid #CCC;
+}
+.aside-right{
+	width:760px;
+	height:2000px;
+	float:right;
+	border:1px solid #CCC;
+	line-height:40px;
+	padding:10px;
+}
+
+
+.tushu{
+	color:#F00;
+	font-size:18px;
+	margin-top:20px;
+}
+.xuhao-red{
+	color:#F00;
+	font-size:19px;
+	margin-left:15px;
+	margin-right:15px;
+}
+.xuhao{
+	font-size:18px;
+	margin-left:15px;
+	margin-right:15px;
+}
+.fooder{
+	width:100%;
+	height:50px;
+	line-height:50px;
+	background-color:#F7F7F7;
+}
+.fooder li{
+	float:left;
+	list-style:none;
+	margin-left:160px;
+}
+.fooder li a{
+	font-size:18px;
+	color:#333;
+	text-decoration:none;
+}
+.fooder li a:hover{
+	color:#F00;
+}
+.logo2{
+	text-align:center;
+	background-color:#F7F7F7;
+}
+.ad{
+	width:1000px;
+	margin:0 auto;
+}
+</style>
+</head>
+
+<body>
+<div class="header">
+    <li><a href="#">首页</a></li>
+    <li><a href="#">登录</a></li>
+    <li><a href="#">注册</a></li>
+    <ul>
+        <li><a href="#">购物车</a></i></li>
+        <li><a href="#">收藏夹</a></li>
+        <li class="red"><a href="#">分类</a></li>
+        <li class="yellow"><a href="#">公告</a></li>
+    </ul>
+</div>
+<div class="content">
+<div class="logo">
+  <img src="images/LOGO.png" width="230">
+  </div>
+  <div class="nav">
+      <a href="#">教材书籍</a>
+      <a href="#">少儿读物</a>
+      <a href="#">社科书籍</a>
+      <a href="#">网络文学</a>
+      <a href="#">创意文具</a>
+    </div>
+    <div id="box">
+        <input type="text" name="search" placeholder="请输入关键字">
+        <div id="search">搜索</div>
+    </div>
+</div>
+
+<div class="border"></div>
+
+<div class="artcle">
+<div class="artcle-left">
+<img src="images/img6.jpg" width="200" height="235">
+</div>
+
+<div class="artcle-right">
+<h3>中国文化的美丽精神</h3><br>
+<span class="or"><p>几乎汇集了宗白华一生最精要的美学篇章，将《美学散步》《艺境》代表作作中的精华篇章悉数收入，分为美与人生、美与艺术、美与传统三个部分。</p></span>
+<br>
+
+<span class="orr">
+<p>作者：宗白华 著</p>
+<p>出版社：长江文艺出版社 出版时间：2015-06-01</p>
+<p>开本：16开页数：278</p>
+<p>排名：文化销量榜第5位</p>
+</span>
+
+<p class="orrr">中 图 价:<span class="orrrr">¥10.5</span>(3.2折)定价:<strike>¥32.8</strike></p>
+<div>
+<button class="btt" style=" border:1px solid #F00; background-color:#F00; color:#FFF; width:120px; height:50px; border-radius:8px; font-size:18px;">
+加入购物车</button>
+<button style=" border:1px solid #F00; background-color:#FFF; color:#F00; width:80px; height:50px; border-radius:8px; font-size:18px; margin-left:20px;">
+收藏</button>
+</div>
+
+</div>
+</div>
+
+<div class="ad">
+<img src="images/img-1.jpg" width="330">
+<img src="images/img-2.jpg" width="330">
+<img src="images/img-3.jpg" width="330">
+</div>
+
+<div class="aside">
+<div class="aside-left">
+<div class="left-t"><span>书友推荐</span></div>
+<p><span class=" xuhao-red">01</span><a href="#">现代西方心灵哲学</a></p>
+<p><span class=" xuhao-red">02</span><a href="#">六号染色体</a></p>
+<p><span class=" xuhao-red">03</span><a href="#">天狗面具</a></p>
+<p><span class=" xuhao">04</span><a href="#">隐形圈</a></p>
+<p><span class=" xuhao">05</span><a href="#">第七个十字架</a></p>
+<p><span class=" xuhao">06</span><a href="#">中央帝国的哲学密码</a></p>
+<p><span class=" xuhao">07</span><a href="#">中医往事</a></p>
+<p><span class=" xuhao">08</span><a href="#">庄子的现代命运</a></p>
+<p><span class=" xuhao">09</span><a href="#">中国文化的美丽精神</a></p>
+<p><span class=" xuhao">10</span><a href="#">大法医:人体实验室</a>></p>
+</div>
+<div class="aside-right">
+<span style=" margin-left:30px;">商品详情</span>
+<div class="right-t"></div>
+<h3>中国文化的美丽精神 本书特色</h3>
+宗白华先生是中国现代美学的先行者和开拓者，被誉为"融贯中西艺术理论的一代美学大师"，他著述不多，这本《中国文化的美丽精神》几乎汇集了其一生zui精要的美学篇章。将《美学散步》《艺境》代表作作中的精华篇章悉数收入，分为美与人生、美与艺术、美与传统三个部分。全书文辞典雅，将中华传统文化的独特魅力娓娓道来，充满鲜活的生命力；每一位为俗务烦扰的现代读者，每一个渴望自由宁静的现代心灵，都能从中充分感受到中国文化中充满的人间的诗意和对生命的美丽。
+
+<h3>中国文化的美丽精神 内容简介</h3>
+1． 浓缩了宗先生《美学散步》《艺境》等代表作中的精华之作，超高性价比。<br> 
+2． 在弘扬中国传统文化的大背景下，此书有助于了解中国文化之美，对全民建构艺术化人生有指导意义。是弘扬中国文化之美的经典之作。<br>
+
+<h3>中国文化的美丽精神 目录</h3>
+美与人生<br>
+003美从何处寻？<br>
+011美学的散步<br>
+023中国文化的美丽精神往哪里去？<br>
+027我和艺术<br>
+029艺术与中国社会<br>
+034略谈艺术的"价值结构"<br>
+038艺术生活<br>
+042看了罗丹雕刻以后<br>
+050我所爱于莎士比亚的<br>
+053歌德的《少年维特之烦恼》<br>
+064说人生观<br>
+073怎样使我们生活丰富？<br>
+077新人生观问题的我见<br>
+082歌德之人生启示<br>
+107悲剧与幽默的人生态度<br>
+110青年烦闷的解救法<br>
+美与艺术<br>
+117论文艺的空灵与充实<br>
+125中国艺术表现里的虚和实<br>
+130中国艺术意境之诞生<br>
+144中国古代绘画美学思想<br>
+150中国古代音乐美学思想<br>
+155中国书法里的美学思想<br>
+182中国园林建筑艺术所表现的美学思想<br>
+188论中西画法的渊源与基础<br>
+204中西画法所表现的空间意识<br>
+212哲学与艺术<br>
+美与传统<br>
+225说《周易》<br>
+238说孔子<br>
+247说庄子<br>
+259论《世说新语》和晋人的美<br>
+
+<h3>中国文化的美丽精神 作者简介</h3>
+宗白华，雅号"佛头宗"，中国现代哲学家、美学大师、诗人，南大哲学系代表人物。著有《宗白华全集》及美学论文集《美学散步》、《艺境》等。作为美学家，宗白华的基本立场是探寻使人生艺术化。他将中国体验式美学推向了极致。
+</p>
+</div>
+</div>
+
+<div class="fooder" >
+<li><a href="#">新手上路</a></li>
+<li><a href="#">购买问题</a></li>
+<li><a href="#">售后服务</a></li>
+<li>借鉴中国图书网</li> 
+<li>借鉴新东方图书网</li> 
+</div>
+<div class="logo2"><img src="images/footer.fw.png"></div>
+
+
+</body>
+</html>
