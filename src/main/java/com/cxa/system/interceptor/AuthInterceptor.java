@@ -21,13 +21,12 @@ import com.cxa.system.manager.ClientManager;
 import com.cxa.system.service.SystemService;
 import com.cxa.system.vo.Client;
 
-
 /**
  * 权限拦截器
  * 
  */
 public class AuthInterceptor implements HandlerInterceptor {
-	 
+
 	private static final Logger logger = Logger.getLogger(AuthInterceptor.class);
 	private SystemService systemService;
 	private List<String> excludeUrls;
@@ -52,10 +51,12 @@ public class AuthInterceptor implements HandlerInterceptor {
 	/**
 	 * 在controller后拦截
 	 */
-	public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object object, Exception exception) throws Exception {
+	public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object object,
+			Exception exception) throws Exception {
 	}
 
-	public void postHandle(HttpServletRequest request, HttpServletResponse response, Object object, ModelAndView modelAndView) throws Exception {
+	public void postHandle(HttpServletRequest request, HttpServletResponse response, Object object,
+			ModelAndView modelAndView) throws Exception {
 
 	}
 
@@ -66,18 +67,26 @@ public class AuthInterceptor implements HandlerInterceptor {
 		String requestPath = ResourceUtil.getRequestPath(request);
 		HttpSession session = ContextHolderUtils.getSession();
 		Client client = ClientManager.getInstance().getClient(session.getId());
+		System.out.println("excludeUrls" + requestPath);
+		// bookController 不拦截
+		if (requestPath.indexOf("bookController") != -1) {
+			return true;
+		}
+		// if (requestPath.equals("bookController.do?bookType")) {
+		// return true;
+		// }
 		if (excludeUrls.contains(requestPath)) {
 			return true;
-		}else{
-			if(client != null && client.getUser() != null){
+		} else {
+			if (client != null && client.getUser() != null) {
 				return true;
-			}else{
-				forward(request,response);
+			} else {
+				forward(request, response);
 				return false;
 			}
 		}
 	}
-	
+
 	/**
 	 * 转发
 	 * 
@@ -88,8 +97,9 @@ public class AuthInterceptor implements HandlerInterceptor {
 	public ModelAndView forword(HttpServletRequest request) {
 		return new ModelAndView(new RedirectView("loginController.do?login"));
 	}
-	
-	private void forward(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+	private void forward(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 		request.getRequestDispatcher("pages/common/timeout.jsp").forward(request, response);
 	}
 

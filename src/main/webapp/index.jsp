@@ -265,10 +265,10 @@ strike{
     <li><a href="loginController.do?logout">登录</a></li>
     <li><a href="#">注册</a></li>
     <ul>
-        <li><a href="#">购物车</a></i></li>
+        <li><a href="bookController.do?shoppingCart">购物车</a></i></li>
         <li><a href="#">收藏夹</a></li>
-        <li class="red"><a href="#">分类</a></li>
-        <li class="yellow"><a href="#">公告</a></li>
+        <li class="red"><a href="bookController.do?bookType">分类</a></li>
+        <li class="yellow"><a href="bookController.do?notice">公告</a></li>
     </ul>
 </div>
 <div class="content">
@@ -313,7 +313,7 @@ strike{
             <li><a href="index.html"class="cur">首页</a></li>
             <li><a href="#item1">购物车</a></li>
             <li><a href="#item2">收藏夹</a></li>
-            <li><a href="#item3">分类</a></li>
+            <li><a href="loginController.do?bookType">分类</a></li>
         </ul>
     </div>
 </div>
@@ -480,9 +480,9 @@ strike{
 </div>
 </div>
 <div class="fooder" >
-<li><a href="#">新手上路</a></li>
-<li><a href="#">购买问题</a></li>
-<li><a href="#">售后服务</a></li>
+<li><a href="bookController.do?newComers">新手上路</a></li>
+<li><a href="bookController.do?buyProblem">购买问题</a></li>
+<li><a href="bookController.do?afterService">售后服务</a></li>
 <li>借鉴中国图书网</li> 
 <li>借鉴新东方图书网</li> 
 </div>

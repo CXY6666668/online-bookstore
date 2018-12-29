@@ -58,6 +58,14 @@ public class LoginController {
 		return new ModelAndView("system/home");
 	}
 
+	/*
+	 * 分类
+	 */
+	@RequestMapping(params = "bookType")
+	public ModelAndView bookType(HttpServletRequest request) {
+		return new ModelAndView("bookstore/bookType");
+	}
+
 	/**
 	 * 退出系统
 	 * 
@@ -83,15 +91,15 @@ public class LoginController {
 		HttpSession session = ContextHolderUtils.getSession();
 		Client client = ClientManager.getInstance().getClient(session.getId());
 		req.setAttribute("username", client.getUser().getUsername());
-		//req.setAttribute("username", client.getUser().getRealName());
-		String roleName=null;
-		List<RoleEntity> list=client.getUser().getRoles();
+		// req.setAttribute("username", client.getUser().getRealName());
+		String roleName = null;
+		List<RoleEntity> list = client.getUser().getRoles();
 		for (RoleEntity roleEntity : list) {
 			System.out.println(roleEntity.getName());
-			roleName=roleEntity.getName();
-			//System.out.println(test.get(0).getName());
+			roleName = roleEntity.getName();
+			// System.out.println(test.get(0).getName());
 		}
-		req.setAttribute("roleName",roleName);
+		req.setAttribute("roleName", roleName);
 		return mav;
 	}
 
@@ -141,7 +149,8 @@ public class LoginController {
 		}
 		return j;
 	}
-	//加载菜单树
+
+	// 加载菜单树
 	@RequestMapping(params = "getTreeMenu")
 	@ResponseBody
 	public String getTreeMenu(HttpServletRequest request) {
