@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>无标题文档</title>
+<title>首页-欢迎您！</title>
 <link href="font-awesome-4.7.0/css/font-awesome.min.css"  rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="css/ft-carousel.css"/>
 <link rel="stylesheet" href="css/index.css"/>
@@ -262,7 +262,7 @@ strike{
 <body>
 <div class="header">
     <li><a href="#">首页</a></li>
-    <li><a href="#">登录</a></li>
+    <li><a href="loginController.do?logout">登录</a></li>
     <li><a href="#">注册</a></li>
     <ul>
         <li><a href="#">购物车</a></i></li>
