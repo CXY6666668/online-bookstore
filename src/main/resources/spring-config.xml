@@ -117,6 +117,7 @@
 				<value>com.cxa.common.entity.*</value>
 				<value>com.cxa.system.entity.*</value>
 				<value>com.cxa.buss.entity.*</value>
+				<value>com.cxa.bookstore.entity.*</value>
 			</list>
 		</property>
 		<property name="hibernateProperties">

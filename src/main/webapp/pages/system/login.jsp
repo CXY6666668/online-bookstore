@@ -30,19 +30,23 @@
 				<input type="text" id="captcha" name="captcha" placeholder="验证码">
 			</label>
 			<div>
-		          		<img style=" float:right;" title="点击更换" id="img_captcha" onclick="javascript:refreshCaptcha();" src="captchaCode">
+		          <img style=" float:right;" title="点击更换" id="img_captcha" onclick="javascript:refreshCaptcha();" src="captchaCode">
           	</div>
           	<br/>
-               		<div id="errormsg" style="color: red"></div>
-			<input id="login" type="button" value="登陆">
+            <div id="errormsg" style="color: red"></div>
+                <table width="300">
+               		<td>
+               			<th width="50%" style="padding-right: 10px"><input id="register" type="button" value="注册"></th>
+               			<th width="50%" style="padding-left: 10px"><input id="login" type="button" value="登陆"></th>
+               		</td>
+				</table>
 		</form>
 		<br/>
 		<div>
-			<a href="#" style="color: white;" target="_blank">毕业设计_学习之旅</a>
+			<a href="http://localhost:8082/online-bookstore" style="color: white;" target="_blank">毕业设计_学习之旅</a>
 		</div>
 		<br/>
 	</section>
-	<div style="text-align:center;clear:both">
-</div>
+	<div style="text-align:center;clear:both"></div>
 </body>
 </html>

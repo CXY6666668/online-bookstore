@@ -83,6 +83,8 @@ function GetCount() {
 
 </head>
 <body>
+<jsp:include page="../top.jsp" flush="true" ></jsp:include>
+<!--  
 <div class="header">
     <li><a href="#">首页</a></li>
     <li><a href="#">登录</a></li>
@@ -93,7 +95,7 @@ function GetCount() {
         <li class="red"><a href="#">分类</a></li>
         <li class="yellow"><a href="#">公告</a></li>
     </ul>
-</div>
+</div>-->
 <div class="gwc">
 <table cellpadding="0" cellspacing="0" class="gwc_tb1">
 		<tr>

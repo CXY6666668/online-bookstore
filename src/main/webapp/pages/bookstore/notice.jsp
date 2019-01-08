@@ -169,6 +169,7 @@ input{
 </head>
 
 <body>
+<!--  
 <div class="header">
     <li><a href="#">首页</a></li>
     <li><a href="#">登录</a></li>
@@ -179,7 +180,8 @@ input{
         <li class="red"><a href="#">分类</a></li>
         <li class="yellow"><a href="#">公告</a></li>
     </ul>
-</div>
+</div>-->
+<jsp:include page="../top.jsp" flush="true" ></jsp:include>
 <div class="content">
 <div class="logo">
   <img src="images/LOGO.png" width="230">
