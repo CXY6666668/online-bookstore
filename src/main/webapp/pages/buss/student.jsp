@@ -233,7 +233,7 @@
 	}
 	function loadDataGrid(queryConditon){
 		 $('#dg').datagrid({  
-	            title : '学生信息',  
+	            title : '学生信息1',  
 	            iconCls : 'icon-ok',  
 	            pageSize : 5,//默认选择的分页是每页5行数据  
 	            pageList : [ 5, 10, 15, 20 ],//可以选择的分页集合  

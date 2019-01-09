@@ -8,7 +8,7 @@
 	<meta HTTP-EQUIV="pragma" CONTENT="no-cache"> 
 	<meta HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate"> 
 	<meta HTTP-EQUIV="expires" CONTENT="0"> 
-	<title>MyDormitory</title>
+	<title>智慧书屋</title>
 	
 </head>
 <body  class="easyui-layout">

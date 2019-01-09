@@ -17,13 +17,12 @@ import com.cxa.common.entity.base.BaseEntity;
  * 
  * @desc 学生
  *
- * @author bjpowernode
+ * @author cxa
  */
 @Entity
-@Table(name="T_B_STUDENT")
-public class StudentEntity extends BaseEntity{
-	
-	
+@Table(name = "T_B_STUDENT")
+public class StudentEntity extends BaseEntity {
+
 	/**
 	 * 
 	 */
@@ -34,31 +33,31 @@ public class StudentEntity extends BaseEntity{
 	 */
 	@Column(length = 10)
 	private String name;
-	
+
 	/**
 	 * 性别
 	 */
 	@Column(length = 1)
 	private String sex;
-	
+
 	/**
 	 * 出生日期
 	 */
 	@Column(length = 20)
 	private Date birthday;
-	
+
 	/**
 	 * qq
 	 */
 	@Column(length = 15)
 	private String qq;
-	
+
 	/**
 	 * 电话
 	 */
 	@Column(length = 15)
 	private String mobile;
-	
+
 	/**
 	 * 班级
 	 */
@@ -66,7 +65,7 @@ public class StudentEntity extends BaseEntity{
 	@JoinColumn(name = "classid")
 	@JsonIgnore
 	private ClassEntity classes;
-	
+
 	/**
 	 * 宿舍
 	 */
